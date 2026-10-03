@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="StudentHub - A student productivity and portfolio web application">
+    <meta name="keywords" content="StudentHub, student dashboard, tasks, projects, productivity">
+    <meta name="author" content="Nihitha Reddy">
+
+    <title>StudentHub | Student Productivity App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>🎓</span>
+                StudentHub
+            </div>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#products">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="welcome-text">WELCOME TO STUDENTHUB</p>
+
+                <h1>
+                    Organize Your
+                    <span>Student Life</span>
+                    Better
+                </h1>
+
+                <p>
+                    A simple and powerful platform to manage your tasks,
+                    showcase your projects, explore resources and stay
+                    productive.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#tasks" class="btn primary-btn">Manage Tasks</a>
+                    <a href="#projects" class="btn secondary-btn">View Projects</a>
+                </div>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="dashboard-icon">📚</div>
+
+                <h2>Student Dashboard</h2>
+
+                <p>Learn • Create • Organize • Grow</p>
+
+                <div class="quick-stats">
+                    <div>
+                        <strong id="heroTaskCount">0</strong>
+                        <span>Tasks</span>
+                    </div>
+
+                    <div>
+                        <strong>4</strong>
+                        <span>Projects</span>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>Focus</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="section">
+
+            <div class="section-heading">
+                <p>ABOUT STUDENTHUB</p>
+                <h2>Everything You Need in One Place</h2>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-card">
+                    <div class="card-icon">✅</div>
+                    <h3>Task Management</h3>
+                    <p>
+                        Add, manage and track your daily tasks easily.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Project Showcase</h3>
+                    <p>
+                        Display your projects and development work
+                        professionally.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">📦</div>
+                    <h3>Useful Resources</h3>
+                    <p>
+                        Explore useful student resources through a
+                        searchable interface.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>
+                        Use StudentHub comfortably on desktop, tablet
+                        and mobile devices.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Task Manager -->
+        <section id="tasks" class="section task-section">
+
+            <div class="section-heading">
+                <p>PRODUCTIVITY</p>
+                <h2>Student Task Manager</h2>
+            </div>
+
+            <div class="task-container">
+
+                <div class="task-input-area">
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter a new task..."
+                        maxlength="100"
+                    >
+
+                    <button id="addTaskBtn" class="btn primary-btn">
+                        Add Task
+                    </button>
+
+                </div>
+
+                <div class="task-info">
+                    <span id="taskCount">0 Tasks</span>
+
+                    <button id="clearTasksBtn" class="clear-btn">
+                        Clear All
+                    </button>
+                </div>
+
+                <ul id="taskList" class="task-list"></ul>
+
+                <p id="emptyMessage" class="empty-message">
+                    No tasks yet. Add your first task!
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+                <p>MY WORK</p>
+                <h2>Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        📚
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-tag">HTML • CSS • JS</span>
+
+                        <h3>StudyMate</h3>
+
+                        <p>
+                            A student study planner designed to organize
+                            study tasks and schedules.
+                        </p>
+
+                        <button class="project-btn">
+                            View Project
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        📝
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-tag">HTML • CSS • JS</span>
+
+                        <h3>Contact Form</h3>
+
+                        <p>
+                            An interactive contact form with input fields
+                            and JavaScript validation.
+                        </p>
+
+                        <button class="project-btn">
+                            View Project
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        🌤️
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-tag">JavaScript • API</span>
+
+                        <h3>SmartHub Dashboard</h3>
+
+                        <p>
+                            An interactive dashboard combining quizzes,
+                            carousel features and live API data.
+                        </p>
+
+                        <button class="project-btn">
+                            View Project
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        ✅
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-tag">JavaScript • LocalStorage</span>
+
+                        <h3>StudentHub Task Manager</h3>
+
+                        <p>
+                            A dynamic task management application that
+                            stores tasks using browser local storage.
+                        </p>
+
+                        <button class="project-btn">
+                            View Project
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Resources / Product Listing -->
+        <section id="products" class="section resources-section">
+
+            <div class="section-heading">
+                <p>STUDENT RESOURCES</p>
+                <h2>Explore Resources</h2>
+            </div>
+
+            <div class="resource-controls">
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search resources..."
+                >
+
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="coding">Coding</option>
+                    <option value="study">Study</option>
+                    <option value="career">Career</option>
+                </select>
+
+                <select id="sortSelect">
+                    <option value="default">Sort By</option>
+                    <option value="name">Name</option>
+                    <option value="rating">Rating</option>
+                </select>
+
+            </div>
+
+            <div id="resourceGrid" class="resource-grid">
+
+                <article class="resource-card"
+                    data-name="HTML Basics"
+                    data-category="coding"
+                    data-rating="4.8">
+
+                    <div class="resource-icon">🌐</div>
+
+                    <h3>HTML Basics</h3>
+
+                    <p>
+                        Learn the structure and fundamentals of HTML.
+                    </p>
+
+                    <div class="resource-bottom">
+                        <span>Coding</span>
+                        <strong>⭐ 4.8</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="resource-card"
+                    data-name="JavaScript Fundamentals"
+                    data-category="coding"
+                    data-rating="4.9">
+
+                    <div class="resource-icon">⚡</div>
+
+                    <h3>JavaScript Fundamentals</h3>
+
+                    <p>
+                        Understand JavaScript concepts and interactivity.
+                    </p>
+
+                    <div class="resource-bottom">
+                        <span>Coding</span>
+                        <strong>⭐ 4.9</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="resource-card"
+                    data-name="Study Planning"
+                    data-category="study"
+                    data-rating="4.6">
+
+                    <div class="resource-icon">📖</div>
+
+                    <h3>Study Planning</h3>
+
+                    <p>
+                        Organize your study sessions and manage your time.
+                    </p>
+
+                    <div class="resource-bottom">
+                        <span>Study</span>
+                        <strong>⭐ 4.6</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="resource-card"
+                    data-name="Career Preparation"
+                    data-category="career"
+                    data-rating="4.7">
+
+                    <div class="resource-icon">🚀</div>
+
+                    <h3>Career Preparation</h3>
+
+                    <p>
+                        Explore useful tips for building your technical
+                        career.
+                    </p>
+
+                    <div class="resource-bottom">
+                        <span>Career</span>
+                        <strong>⭐ 4.7</strong>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p id="noResults" class="no-results">
+                No resources found.
+            </p>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact" class="section contact-section">
+
+            <div class="section-heading">
+                <p>GET IN TOUCH</p>
+                <h2>Contact Me</h2>
+            </div>
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+
+                    <h3>Let's Connect</h3>
+
+                    <p>
+                        Have a question, suggestion or feedback?
+                        Send a message through the form.
+                    </p>
+
+                    <div class="contact-item">
+                        📧
+                        <span>studenthub@example.com</span>
+                    </div>
+
+                    <div class="contact-item">
+                        💻
+                        <span>Web Development Student</span>
+                    </div>
+
+                </div>
+
+
+                <form id="contactForm" class="contact-form">
+
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Enter your message"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn primary-btn">
+                        Send Message
+                    </button>
+
+                    <p id="formMessage"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <h3>🎓 StudentHub</h3>
+                <p>
+                    Learn. Create. Organize. Grow.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#tasks">Tasks</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 StudentHub. Built for ApexPlanet Internship.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
